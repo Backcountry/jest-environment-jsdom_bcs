@@ -30,8 +30,11 @@ function _interopRequireDefault(obj) {
 class JSDOMEnvironment {
     constructor(config) {
         // lazy require
-        this.document = (_jsdom || _load_jsdom()).default.jsdom('<!DOCTYPE html>', {
-            url: config.testURL
+        this.document = (_jsdom || _load_jsdom()).default.jsdom('<!DOCTYPE html><html lang="en"><body></body></html>', {
+            url: config.testURL,
+            features: {
+                FetchExternalResources: ['img']
+            }
         });
 
         const global = this.global = this.document.defaultView;
