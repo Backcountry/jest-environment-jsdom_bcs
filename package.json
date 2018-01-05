@@ -1,0 +1,20 @@
+{
+  "name": "jest-environment-jsdom_bcs",
+  "version": "1.0.0",
+  "description": "jest-environment-jsdom for backcountry.com",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Backcountry/jest-environment-jsdom_bcs.git"
+  },
+  "author": "Marcial Cambronero",
+  "license": "MIT",
+  "dependencies": {
+    "jest-mock": "21.2.0",
+    "jest-util": "21.2.1",
+    "jsdom": "9.12.0"
+  }
+}
